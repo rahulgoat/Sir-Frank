@@ -10,3 +10,13 @@ from phi.utils.log import logger
 
 from assistant import get_auto_rag_assistant  # type: ignore
 from assistant import get_case_research_agent
+
+
+nest_asyncio.apply()
+st.set_page_config(
+    page_title="Sir Frank",
+    page_icon=":black_heart:",
+)
+st.title("Autonomous RAG")
+st.markdown("##### :orange_heart: built using [phidata](https://github.com/phidatahq/phidata)")
+
