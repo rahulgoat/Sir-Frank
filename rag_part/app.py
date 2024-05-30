@@ -20,3 +20,14 @@ st.set_page_config(
 st.title("Autonomous RAG")
 st.markdown("##### :orange_heart: built using [phidata](https://github.com/phidatahq/phidata)")
 
+def restart_assistant():
+    logger.debug("---*--- Restarting Assistant ---*---")
+    st.session_state["auto_rag_assistant"] = None
+    st.session_state["auto_rag_assistant_run_id"] = None
+    if "url_scrape_key" in st.session_state:
+        st.session_state["url_scrape_key"] += 1
+    if "file_uploader_key" in st.session_state:
+        st.session_state["file_uploader_key"] += 1
+    st.rerun()
+
+
