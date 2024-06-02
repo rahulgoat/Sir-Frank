@@ -17,8 +17,8 @@ st.set_page_config(
     page_title="Sir Frank",
     page_icon=":black_heart:",
 )
-st.title("Autonomous RAG")
-st.markdown("##### :orange_heart: built using [phidata](https://github.com/phidatahq/phidata)")
+st.title("Sir Frank")
+st.markdown("##### :orange_heart: built by gabriel,pinto,daniel and rahul ")
 
 def restart_assistant():
     logger.debug("---*--- Restarting Assistant ---*---")
